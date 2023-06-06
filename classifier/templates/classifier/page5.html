@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-5">
+      {% include 'classifier/nav.html' %}
+      <div class="disease-diagnosed-parent">
+        <b class="disease-diagnosed">Disease diagnosed:</b>
+        <b class="normal">{{ prediction }}</b>
+      </div>
+      <div class="result">Result</div>
+    </div>
+  </body>
+</html>

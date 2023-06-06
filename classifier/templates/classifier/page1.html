@@ -1,0 +1,130 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{% static 'desktop-1.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-1">
+      {% include 'classifier/nav.html' %}
+      <div class="fast-and-accurate-eye-diagnosi-parent">
+        <div class="fast-and-accurate">
+          Fast and Accurate Eye Diagnosis Using AI
+        </div>
+        <div class="our-ai-based-eye">
+          Our AI-based eye diagnostic system uses cutting-edge technology to
+          analyze retinal images and provide fast and accurate diagnoses for
+          common eye conditions such as cataracts and glaucoma. Designed for use
+          by healthcare professionals, our system can help streamline the
+          diagnostic process and improve patient outcomes.
+        </div>
+      </div>
+      <div class="rectangle-parent">
+        <img class="frame-inner" alt="" src="{% static 'public/rectangle-1@2x.png' %}" />
+
+        <div class="deep-learning-algorithms-parent">
+          <b class="deep-learning-algorithms">Deep Learning Algorithms</b>
+          <div class="at-the-core">
+            At the core of our system lies deep learning algorithms, a subset of
+            artificial intelligence that allows machines to learn from large
+            datasets and make predictions or classifications. By leveraging deep
+            neural networks, our system can automatically extract complex
+            features and patterns from retinal images, enabling accurate
+            identification and diagnosis of various eye conditions.
+          </div>
+        </div>
+      </div>
+      <div class="frame-group">
+        <div class="deep-learning-algorithms-parent">
+          <b class="deep-learning-algorithms">Unprecedented Accuracy</b>
+          <div class="at-the-core">
+            Through extensive training on a diverse range of retinal images, our
+            deep learning models have achieved exceptional accuracy in
+            identifying and classifying eye diseases. The algorithms have
+            learned to detect subtle abnormalities, even those that might be
+            missed by the human eye. This enables our system to provide highly
+            reliable diagnoses, aiding ophthalmologists in making informed
+            decisions about patient care.
+          </div>
+        </div>
+        <img class="rectangle-icon" alt="" src="{% static 'public/rectangle-11@2x.png' %}" />
+      </div>
+      <div class="key-features">Key Features</div>
+      <div class="feature">
+        <div class="frame-container">
+          <div class="accurate-diagnosis-wrapper">
+            <div class="fast-and-accurate">Accurate Diagnosis</div>
+          </div>
+          <div class="our-ai-based-eye-diagnostic-sy-wrapper">
+            <div class="our-system-is">
+              Our AI-based eye diagnostic system is designed to provide fast and
+              accurate diagnoses of retinal images. Using advanced deep learning
+              algorithms, our system can quickly analyze the unique features of
+              each image and provide a diagnosis with a high degree of accuracy.
+            </div>
+          </div>
+        </div>
+        <div class="feature-child"></div>
+      </div>
+      <div class="feature1">
+        <div class="frame-container">
+          <div class="accurate-diagnosis-wrapper">
+            <div class="fast-and-accurate">Easy to Use</div>
+          </div>
+          <div class="our-ai-based-eye-diagnostic-sy-wrapper">
+            <div class="our-system-is">
+              Our system is designed to be intuitive and easy to use, even for
+              users who have no experience with medical imaging. With a simple
+              and streamlined user interface, our system makes it easy to upload
+              an image and receive a diagnosis in just a few clicks.
+            </div>
+          </div>
+        </div>
+        <div class="feature-child"></div>
+      </div>
+      <div class="feature2">
+        <div class="frame-container">
+          <div class="accurate-diagnosis-wrapper">
+            <div class="fast-and-accurate">Fast Results</div>
+          </div>
+          <div class="our-ai-based-eye-diagnostic-sy-wrapper">
+            <div class="our-system-is">
+              With our system, you can receive a diagnosis of your retinal image
+              in just seconds. Our advanced algorithms are optimized for speed
+              and efficiency, allowing us to provide fast results without
+              sacrificing accuracy.
+            </div>
+          </div>
+        </div>
+        <div class="feature-child"></div>
+      </div>
+      <div class="technology-overview-parent">
+        <div class="fast-and-accurate">Technology Overview</div>
+        <div class="our-ai-based-eye2">
+          Our AI-based eye diagnostic system harnesses the power of advanced
+          deep learning algorithms to provide accurate and efficient analysis of
+          retinal images. This cutting-edge technology enables us to
+          revolutionize the field of ophthalmology and enhance the way eye
+          conditions are diagnosed.
+        </div>
+      </div>
+      <div class="unlock-the-future-of-eye-diagn-parent">
+        <b class="unlock-the-future"
+          >Unlock the future of eye diagnostics. Upload your retinal image now
+          and experience the precision of AI analysis. Get started today!</b
+        >
+        <div class="get-started-wrapper">
+          <a class="fast-and-accurate" style="text-decoration:none; color: inherit;"  href="{% url 'upload_image' %}">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

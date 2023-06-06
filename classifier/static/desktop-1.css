@@ -1,0 +1,271 @@
+.home4 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+.home-parent1 {
+  position: absolute;
+  top: 38px;
+  left: 850px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xl);
+  color: var(--color-black);
+}
+.fast-and-accurate {
+  position: relative;
+  font-weight: 800;
+}
+.our-ai-based-eye {
+  position: relative;
+  font-size: 19px;
+  text-align: center;
+  display: inline-block;
+  width: 1235px;
+  height: 121px;
+  flex-shrink: 0;
+}
+.fast-and-accurate-eye-diagnosi-parent {
+  position: absolute;
+  top: 245px;
+  left: 0;
+  border-radius: 20px 0 200px var(--br-21xl);
+  background-color: var(--color-cadetblue-200);
+  width: 100%;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xs) 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-69xl);
+  font-size: var(--font-size-29xl);
+}
+.frame-inner {
+  border-radius: var(--br-31xl);
+  width: 429px;
+  height: 461px;
+  object-fit: cover;
+}
+.at-the-core,
+.deep-learning-algorithms,
+.frame-inner {
+  position: relative;
+}
+.at-the-core {
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  width: 920px;
+}
+.deep-learning-algorithms-parent,
+.rectangle-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deep-learning-algorithms-parent {
+  flex-direction: column;
+  padding: var(--padding-3xs);
+  gap: var(--gap-31xl);
+}
+.rectangle-parent {
+  position: absolute;
+  top: 2385px;
+  left: 9px;
+  border-radius: 0 var(--br-131xl) 0 var(--br-131xl);
+  background-color: var(--color-gainsboro-100);
+  width: 1431px;
+  height: 466px;
+  flex-direction: row;
+  padding: 0 0 0 var(--padding-31xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+}
+.rectangle-icon {
+  position: relative;
+  border-radius: var(--br-31xl);
+  width: 318px;
+  height: 303px;
+  object-fit: cover;
+}
+.frame-group,
+.key-features {
+  position: absolute;
+  color: var(--color-black);
+}
+.frame-group {
+  top: 2936px;
+  left: 0;
+  border-radius: var(--br-131xl) 0 var(--br-131xl) 0;
+  background-color: var(--color-gainsboro-100);
+  width: 100%;
+  height: 419px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-31xl) 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+}
+.key-features {
+  top: 891px;
+  left: 566px;
+  font-size: var(--font-size-29xl);
+  font-weight: 800;
+}
+.accurate-diagnosis-wrapper {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-21xl) var(--br-21xl) 0 0;
+  background-color: var(--color-cadetblue-200);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xs);
+  align-items: center;
+  justify-content: center;
+}
+.our-ai-based-eye-diagnostic-sy-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  color: var(--color-black);
+}
+.frame-container {
+  border-radius: var(--br-31xl);
+  border: 1px solid var(--color-silver);
+  box-sizing: border-box;
+  width: 410px;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-2xs);
+  z-index: 0;
+}
+.feature-child {
+  position: absolute;
+  margin: 0 !important;
+  bottom: 252px;
+  left: 167px;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro-200);
+  width: 76px;
+  height: 76px;
+  z-index: 1;
+}
+.feature {
+  position: absolute;
+  top: 1063px;
+  left: 88px;
+  width: 410px;
+  height: 273px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xl);
+}
+.our-system-is {
+  flex: 1;
+  position: relative;
+}
+.feature1,
+.feature2 {
+  position: absolute;
+  top: 1199px;
+  left: 515px;
+  width: 410px;
+  height: 273px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xl);
+}
+.feature2 {
+  top: 1376px;
+  left: 943px;
+}
+.our-ai-based-eye2 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  text-align: center;
+  display: inline-block;
+  width: 1235px;
+  height: 121px;
+  flex-shrink: 0;
+}
+.technology-overview-parent {
+  position: absolute;
+  top: 1886px;
+  left: 0;
+  border-radius: var(--br-481xl) 0 0 var(--br-481xl);
+  background-color: var(--color-cadetblue-200);
+  width: 100%;
+  height: 387px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xs) 0 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-69xl);
+  font-size: var(--font-size-29xl);
+}
+.unlock-the-future {
+  align-self: stretch;
+  position: relative;
+}
+.get-started-wrapper {
+  border-radius: var(--br-31xl);
+  background-color: #ffe500;
+  display: flex;
+  flex-direction: row;
+  padding: 15px 45px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 33px;
+  color: var(--color-black);
+}
+.unlock-the-future-of-eye-diagn-parent {
+  position: absolute;
+  top: 3583px;
+  left: 0;
+  border-radius: 100px;
+  background-color: var(--color-cadetblue-200);
+  width: 100%;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xs) 80px 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  text-align: center;
+  font-size: var(--font-size-9xl);
+}
+.desktop-1 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 4769px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

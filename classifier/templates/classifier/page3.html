@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{% static 'desktop-3.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-3">
+      {% include 'classifier/nav.html' %}
+      <div class="ellipse-group">
+        <img class="frame-item" alt="" src="{% static 'public/ellipse-21@2x.png' %}" />
+
+        <b class="image-upload-was">Image upload was successful</b>
+        <div class="get-result-wrapper">
+          <a style="text-decoration:none; color: inherit;" class="image-upload-was" href="{% url 'result' %}">Get Result</a>
+        </div>
+      </div>
+      <div class="upload-status1">Upload Status</div>
+    </div>
+  </body>
+</html>

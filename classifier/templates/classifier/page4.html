@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'global.css' %}" />
+    <link rel="stylesheet" href="{% static 'desktop-6.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <div class="desktop-6">
+      {% include 'classifier/nav.html' %}
+      <div class="ellipse-parent">
+        <img class="frame-child" alt="" src="{% static 'public/ellipse-2@2x.png' %}" />
+
+        <b class="image-upload-failed">Image upload failed</b>
+        <div class="go-back-wrapper">
+          <a class="image-upload-failed" style="text-decoration:none; color: inherit;" href="javascript:history.back()">Go Back</a>
+        </div>
+      </div>
+      <div class="upload-status">Upload Status</div>
+    </div>
+  </body>
+</html>

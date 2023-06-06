@@ -1,0 +1,60 @@
+.home {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+}
+.home-parent {
+  position: absolute;
+  top: 38px;
+  left: 850px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xl);
+}
+.disease-diagnosed,
+.normal {
+  position: relative;
+}
+.normal {
+  font-size: 36px;
+}
+.disease-diagnosed-parent {
+  position: absolute;
+  top: 306px;
+  left: 0;
+  border-radius: var(--br-31xl);
+  background-color: var(--color-cadetblue-100);
+  border: 7px dashed var(--color-white);
+  box-sizing: border-box;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-3xs) 0 0;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-41xl);
+  text-align: center;
+  font-size: 32px;
+  color: var(--color-white);
+}
+.result {
+  position: absolute;
+  top: 182px;
+  left: calc(50% - 76px);
+  font-size: var(--font-size-29xl);
+  font-weight: 800;
+}
+.desktop-5 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 857px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
