@@ -31,22 +31,25 @@
             </div>
           </div>
         </form>
+        <div class="uploaded-file-name" id="uploaded-file-name"></div> <!-- Added this div for displaying the file name -->
       </div>
       <div class="upload-image">Upload Image</div>
     </div>
     <script>
       const imageUpload = document.getElementById('image-upload');
-const uploadWrapper = document.querySelector('.upload-wrapper');
+      const uploadWrapper = document.querySelector('.upload-wrapper');
+      const uploadedFileName = document.getElementById('uploaded-file-name');
 
-imageUpload.addEventListener('change', (event) => {
-  if (event.target.files.length > 0) {
-    uploadWrapper.classList.add('enabled');
-    document.getElementById('upload-button').removeAttribute('disabled');
-  } else {
-    uploadWrapper.classList.remove('enabled');
-  }
-});
-
+      imageUpload.addEventListener('change', (event) => {
+        if (event.target.files.length > 0) {
+          uploadWrapper.classList.add('enabled');
+          document.getElementById('upload-button').removeAttribute('disabled');
+          uploadedFileName.textContent = event.target.files[0].name; // Display the file name
+        } else {
+          uploadWrapper.classList.remove('enabled');
+          uploadedFileName.textContent = ''; // Clear the file name if no file is selected
+        }
+      });
     </script>
   </body>
 </html>
