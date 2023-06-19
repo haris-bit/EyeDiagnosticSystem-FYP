@@ -1,7 +1,19 @@
 body {
   margin: 0;
   line-height: normal;
+  background-color: #222 !important;
+  color: #f5f5f5 !important; /* Lighter foreground color */
 }
+
+.disease-diagnosed-parent {
+  background-color: rgba(0, 0, 0, 0.8) !important; /* Darker background color */
+  color: #f5f5f5 !important; /* Lighter foreground color */
+}
+
+.result {
+  color: #f5f5f5 !important; /* Lighter foreground color */
+}
+
 
 :root {
   /* fonts */
