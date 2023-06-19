@@ -40,7 +40,7 @@ def upload_image(request):
             else:
                 predictions = np.argmax(probabilities, axis=1)
                 if predictions == 0:
-                    prediction = 'Nothing, it\'s a Normal eye'
+                    prediction = 'Nothing, it\'s a Normal eye \U0001F642'
                 elif predictions == 1:
                     prediction = 'Cataract'
                 elif predictions == 2:

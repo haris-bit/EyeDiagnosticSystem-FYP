@@ -34,14 +34,23 @@
       .go-back-button:hover {
         background-color: #0056b3;
       }
+      
+      .disease-diagnosed-parent {
+        background-color: {% if prediction %}rgba(255, 0, 0, 0.3){% else %}transparent{% endif %};
+      }
+      
+      .disease-diagnosed {
+        color: black;
+        font-weight: bold;
+        font-family: 'Inter', sans-serif; /* Add a font that supports emojis */
+      }
     </style>  
   </head>
   <body>
     <div class="desktop-5">
       {% include 'classifier/nav.html' %}
       <div class="disease-diagnosed-parent">
-        <b class="disease-diagnosed">Disease diagnosed:</b>
-        <b class="normal">{{ prediction }}</b>
+        <b class="disease-diagnosed">Disease diagnosed: {{ prediction }}</b>
       </div>
       <div class="result">Result</div>
       <div class="go-back-wrapper">

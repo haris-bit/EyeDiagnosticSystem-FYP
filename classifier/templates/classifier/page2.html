@@ -11,6 +11,21 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
     />
+    <style>
+      .drop-zone {
+        border: 2px dashed #ccc;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .drop-zone.highlight {
+        background-color: #f2f2f2;
+      }
+
+      .drop-zone.enabled {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <div class="desktop-2">
@@ -22,32 +37,63 @@
         <form action="{% url 'upload_image' %}" method="POST" enctype="multipart/form-data">
           {% csrf_token %}
           <div class="frame-parent">
-            <div class="select-image-wrapper">
-              <label class="start-the-diagnosis" for="image-upload">Select Image</label>
+            <div class="drop-zone" id="drop-zone">
+              <label class="start-the-diagnosis" for="image-upload">Drag and drop image or click here to select image</label>
               <input type="file" id="image-upload" name="image" accept="image/*" style="display: none;" />
             </div>
             <div class="upload-wrapper">
-              <button class="start-the-diagnosis" style="all: unset;" type="submit" id="upload-button" disabled>Upload</button>
+              <button class="start-the-diagnosis" style="all: unset;" type="submit" id="upload-button" disabled>Next</button>
             </div>
           </div>
         </form>
-        <div class="uploaded-file-name" id="uploaded-file-name"></div> <!-- Added this div for displaying the file name -->
+        <div class="uploaded-file-name" id="uploaded-file-name"></div>
       </div>
       <div class="upload-image">Upload Image</div>
     </div>
     <script>
+      const dropZone = document.getElementById('drop-zone');
       const imageUpload = document.getElementById('image-upload');
       const uploadWrapper = document.querySelector('.upload-wrapper');
       const uploadedFileName = document.getElementById('uploaded-file-name');
 
+      // Prevent default behavior when dragging and dropping over the drop zone
+      dropZone.addEventListener('dragenter', (e) => {
+        e.preventDefault();
+        dropZone.classList.add('highlight');
+      });
+
+      dropZone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+      });
+
+      dropZone.addEventListener('dragleave', (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('highlight');
+      });
+
+      // Handle file drop
+      dropZone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropZone.classList.remove('highlight');
+
+        const files = e.dataTransfer.files;
+        if (files.length > 0) {
+          imageUpload.files = files;
+          uploadWrapper.classList.add('enabled');
+          document.getElementById('upload-button').removeAttribute('disabled');
+          uploadedFileName.textContent = files[0].name;
+        }
+      });
+
+      // Handle file selection from the file input
       imageUpload.addEventListener('change', (event) => {
         if (event.target.files.length > 0) {
           uploadWrapper.classList.add('enabled');
           document.getElementById('upload-button').removeAttribute('disabled');
-          uploadedFileName.textContent = event.target.files[0].name; // Display the file name
+          uploadedFileName.textContent = event.target.files[0].name;
         } else {
           uploadWrapper.classList.remove('enabled');
-          uploadedFileName.textContent = ''; // Clear the file name if no file is selected
+          uploadedFileName.textContent = '';
         }
       });
     </script>
