@@ -88,7 +88,7 @@ This project is licensed under the MIT License.
 
 For any inquiries or questions, please contact the project owner:
 
-Team Lead: Haris Iftikhar
-Members: Waleed Mustafa and Muhammad Umar
-Email: harisiftikhar109@gmail.com
-Feel free to reach out for support or collaboration opportunities.
+Team Lead: Haris Iftikhar  
+Members: Waleed Mustafa and Muhammad Umar  
+Email: harisiftikhar109@gmail.com  
+Feel free to reach out for support or collaboration opportunities.  
